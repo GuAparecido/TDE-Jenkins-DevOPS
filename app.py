@@ -94,7 +94,7 @@ if __name__ == '__main__':
 
 # Rota para adicionar um aluno - Método POST (com validação)
 @app.route('/alunos/validacao', methods=['POST'])
-def adicionar_aluno():
+def adicionar_aluno_com_validacao():
     data = request.get_json()
 
     # Verifica se todos os campos necessários estão presentes
