@@ -93,7 +93,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
 
 # Rota para adicionar um aluno - Método POST (com validação)
-@app.route('/alunos', methods=['POST'])
+@app.route('/alunos/validacao', methods=['POST'])
 def adicionar_aluno():
     data = request.get_json()
 
